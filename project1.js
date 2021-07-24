@@ -1,9 +1,11 @@
 /*
+question : Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+
 step 1: define function that accepts a string as parameter
 step 2: using the .split method, separate string into separate words/strings
 step 3: define a variable longest and leave as undefined
 
-step 4:using 'for' loop, search through the different words and send a conditing where if the index word is greater in length than the longest word, then the value of the longest becomes the index word
+step 4:using 'for' loop, search through the different words and set a condition where if the index word is greater in length than the longest word, then the value of the longest becomes the index word
 console.log the longest.
 */
 function findLongestWord(str) {
@@ -16,10 +18,10 @@ function findLongestWord(str) {
     {
       if(word.length > longest.length) longest = word; 
     }
-      console.log(longest)   
+      return longest   
     }
   
       
   
-  findLongestWord('I love this course because it is very interesting');
+ console.log(findLongestWord('I love this course because it is very interesting'));
   
